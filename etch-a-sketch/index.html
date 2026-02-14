@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/icons/pen.svg">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="wrapper">
+        <h1 class="title">Etch-a-Sketch</h1>
+        <div class="menu">
+            <form id="form" class="form">
+
+                <button id="toggle-grid-size" class="button">Change grid size</button>
+
+                <label class="label">
+                    <input class="color-picker" type="color" id="color-picker" name="color-picker"
+                           value="#0b0c10"/>
+                </label>
+
+                <label class="label">
+                    toggle grid view
+                    <input class="checkbox" type="checkbox" id="grid-view-checkbox">
+                </label>
+                <label class="label">
+                    toggle RGB mode
+                    <input class="checkbox" type="checkbox" id="rgb-checkbox">
+                </label>
+
+                <button id="clear-btn" class="button">Clear</button>
+            </form>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="grid" id="grid">
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <p>Copyright © <span id="current-year"></span>
+            <a class="link link--github" target="_blank" href="https://github.com/pav-n-k">pav-n-k</a>
+        </p>
+    </div>
+</footer>
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal-container">
+    </div>
+</div>
+</body>
+
+</html>
