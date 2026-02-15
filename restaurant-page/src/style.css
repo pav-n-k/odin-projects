@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 100vh;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.header,
+.footer {
+    padding: 25px 0;
+}
+
+.main {
+    flex: auto;
+
+    &>#content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header>.container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: inherit;
+}
+
+.icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.img {
+    flex: 1;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.6s ease;
+
+    &:hover {
+        background: #613B0F;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.github-link {
+    color: #613B0F;
+    text-decoration: none;
+}
+
+.contact-link {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    flex: auto;
+}
+
+@media (max-width: 980px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header>.container {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        font-size: 2rem;
+    }
+
+    .contacts {
+        align-self: center;
+        text-align: center;
+    }
+
+    .contact-link {
+        font-size: 2rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
