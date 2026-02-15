@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/odin-projects/library/vite.svg" />
+    <link rel="stylesheet" href="/odin-projects/library/pico.min.css" />
+    <link rel="stylesheet" href="/odin-projects/library/pico.colors.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>library</title>
+  <script type="module" crossorigin src="/odin-projects/library/assets/index-CyXBBnCc.js"></script>
+  <link rel="stylesheet" crossorigin href="/odin-projects/library/assets/index-D3f27aCE.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <header class="header">
+                <h1 class="title">My book library</h1>
+                <p class="description">This is a project for <a class="link" href="https://www.theodinproject.com/"
+                        target="_blank" rel="noopener noreferrer">The Odin Project</a> in which I have to make a library
+                    using Object
+                    Constructors. You can also view the
+                    <a class="link" href="https://github.com/pav-n-k/odin-projects/tree/library/library" target="_blank"
+                        rel="noopener noreferrer">Github repository</a>
+                    of this project.
+                </p>
+            </header>
+            <form action="" method="post" id="book-form">
+                <fieldset>
+                    <label for="book">
+                        <span>Book:</span>
+                        <input id="book" type="text" name="name" minlength="3" maxlength="25" pattern="[A-Za-z\s]*" placeholder="Book name" required>
+                    </label>
+                    <label for="author">
+                        <span>Author:</span>
+                        <input id="author" type="text" name="author" minlength="3" maxlength="25" pattern="[A-Za-z\s]*" placeholder="Book author" required>
+                    </label>
+                </fieldset>
+                <fieldset class="is-read-group">
+                    <legend>Read or Unread?</legend>
+                    <label>
+                        <input type="radio" name="status" aria-invalid="false" value="true" />
+                        Read
+                    </label>
+                    <label>
+                        <input type="radio" name="status" aria-invalid="true" value="false" checked />
+                        Unread
+                    </label>
+                </fieldset>
+                <button class="submit-button" type="submit">Add book</button>
+                <button type="reset">Reset</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th colspan="2">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="books">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
