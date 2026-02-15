@@ -1,13 +1,13 @@
 🎯 Library
 
 📚 Introduction  
-This project is part of **The Odin Project – Foundations Course**.  
-It focuses on building a simple library app to add, display, and remove books using JavaScript.
+This project is part of **The Odin Project – JavaScript Course**.  
+It focuses on building a simple library app to practice working with objects and DOM manipulation.
 
 🛠️ Technologies Used  
 - HTML5  
 - CSS3  
-- JavaScript (DOM manipulation, event handling, data management)
+- JavaScript (Objects, DOM manipulation, event handling)
 
 🚀 Live Demo  
 You can explore the deployed version on GitHub Pages:  
@@ -15,4 +15,4 @@ You can explore the deployed version on GitHub Pages:
 
 🙌 Acknowledgements  
 This project is based on **The Odin Project** curriculum.  
-Special thanks to the Odin community for open-source resources and guidance.
+Special thanks to the Odin community for open-source learning resources.
