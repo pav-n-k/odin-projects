@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🚀 Running pre-commit checks..."
+
+npm run lint
+
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint found errors. Run 'npm run lint:fix' to auto-fix some issues."
+  exit 1
+fi
+
+npm run format
+git add .
+
+echo "✅ Pre-commit checks passed!"

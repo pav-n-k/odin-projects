@@ -1,0 +1,38 @@
+:root {
+    --pico-font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.is-read-group {
+    display: flex;
+    gap: 20px;
+}
+
+.submit-button {
+    width: inherit !important;
+}
+
+.button {
+    width: 100%;
+    margin: 10px;
+}
+
+.button--del {
+    width: inherit;
+}
+
+.book > td:last-child {
+    text-align: right;
+}
