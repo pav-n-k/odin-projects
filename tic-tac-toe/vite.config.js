@@ -1,7 +1,6 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+import {defineConfig} from "vite";
+import {dirname, resolve} from "path";
+import {fileURLToPath} from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -13,10 +12,10 @@ export default defineConfig({
             "@styles": resolve(__dirname, "src/styles"),
         },
     },
-    base: "/odin-projects/tic-tac-toe",
+    base: "/odin-projects/tic-tac-toe/",
     build: {
         sourcemap: true,
-        outDir: "build",
+        outDir: "dist",
         assetsDir: "assets",
     },
 });
