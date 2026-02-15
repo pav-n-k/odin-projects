@@ -1,0 +1,12 @@
+node_modules
+dist
+build
+coverage
+*.log
+*.md
+*.yml
+*.yaml
+commitlint.config.js
+eslint.config.js
+vite.config.js
+prettier.config.js
